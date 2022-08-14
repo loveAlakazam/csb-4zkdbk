@@ -15,7 +15,7 @@ const signOutBtn = document.getElementById("sign-out-btn");
 
 const LOCAL_STORAGE_USER_KEY = "login-user";
 
-export const openLoginUserInfoOrLoginFormWrapper = () => {
+const openLoginUserInfoOrLoginFormWrapper = () => {
   const savedUserName = localStorage.getItem(LOCAL_STORAGE_USER_KEY);
   let greetings = document.getElementById("greetings");
   let _greetings = greetings.innerText;

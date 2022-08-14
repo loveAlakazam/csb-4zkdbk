@@ -1,5 +1,3 @@
-import { openLoginUserInfoOrLoginFormWrapper } from "./loginLocal.js";
-
 // const timeContainer = document.querySelector("#time-container");
 
 // 시계
