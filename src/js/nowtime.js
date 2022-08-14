@@ -62,10 +62,10 @@ function getNowDateTimeInfo() {
   openLoginUserInfoOrLoginFormWrapper();
 
   // 오전/오후
-  let AmPm = "오전";
+  let AmPm = "AM";
   let _hour = hour;
   if (hour >= 12) {
-    AmPm = "오후";
+    AmPm = "PM";
     if (hour > 12) {
       _hour = hour - 12;
     }
@@ -79,14 +79,13 @@ function getNowDateTimeInfo() {
   let _nowMonth = nowMonth.toString().padStart(2, "0");
   let _nowDay = nowDay.toString().padStart(2, "0");
   let _minute = minute.toString().padStart(2, "0");
-  let _second = second.toString().padStart(2, "0");
   _hour = _hour.toString().padStart(2, "0");
 
   todayDateInfo.innerText = `${nowYear}년 ${_nowMonth}월 ${_nowDay}일 (${nowDayOfWeek})`;
 
-  todayTimeInfo.innerText = `${AmPm} ${_hour}시 ${_minute}분 ${_second}초`;
+  todayTimeInfo.innerText = `${AmPm} ${_hour}:${_minute}`;
 }
 
 // 1분간격으로 업데이트
 getNowDateTimeInfo();
-setInterval(getNowDateTimeInfo, 1000);
+setInterval(getNowDateTimeInfo, 1000* 60);

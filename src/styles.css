@@ -1,5 +1,16 @@
+html{
+  height: 100%;
+
+}
 body {
-  font-family: sans-serif;
+min-height: 100%;
+font-family: sans-serif;
+}
+
+.inner-wrapper,
+.wrapper,
+.middle-wrapper {
+  background-color: transparent;
 }
 
 .hidden {
@@ -13,7 +24,9 @@ body {
 }
 
 .quote-wrapper,
-.time-wrapper {
+.time-wrapper,
+.local-wrapper {
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,6 +35,12 @@ body {
 
 /* 버튼 */
 .btn {
-  background-color: purple;
+  background-color: #fff;
+ font-weight: bold;
   margin: 10px;
+  padding: 10px 20px;
+
+  border-style: 10px #224;
+
+  border-radius: 20px;
 }
