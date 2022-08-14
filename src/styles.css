@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.middle-wrapper,
+.js-timer {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-wrapper,
+.time-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 버튼 */
+.btn {
+  background-color: purple;
+  margin: 10px;
+}
