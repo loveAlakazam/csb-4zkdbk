@@ -9,7 +9,7 @@ var t,e=document.querySelector("#timer"),n=document.querySelector("#timer-contai
 },{}],"gLwk":[function(require,module,exports) {
 var e=document.querySelector("#setting-background"),t=document.querySelector("#setting-background-container");function n(e){t.classList.toggle("hidden")}e.addEventListener("click",n);
 },{}],"BzzN":[function(require,module,exports) {
-var e=document.querySelector("#todo-list-container"),t=document.querySelector("#todo-list");function o(t){e.classList.toggle("hidden")}t.addEventListener("click",o);
+var t=document.querySelector("#todo-list-container"),e=document.getElementById("todo-list-form"),n=document.querySelector("#todo-list");function o(e){t.classList.toggle("hidden")}function d(t){t.preventDefault()}n.addEventListener("click",o),e.addEventListener("submit",d);
 },{}],"vY5e":[function(require,module,exports) {
 var e=document.querySelector("#setting-bookmark"),t=document.querySelector("#bookmark-list-container");function o(e){t.classList.toggle("hidden")}e.addEventListener("click",o);
 },{}],"ItfU":[function(require,module,exports) {
@@ -17,4 +17,4 @@ var e=document.getElementById("quote-sentence"),t=document.getElementById("quote
 },{}],"H99C":[function(require,module,exports) {
 "use strict";require("./styles.css"),require("./loginLocal.js"),require("./nowtime.js"),require("./timer.js"),require("./background_settings.js"),require("./todolist.js"),require("./bookmark.js"),require("./quotes.js");
 },{"./styles.css":"D9Nj","./loginLocal.js":"iCbj","./nowtime.js":"Wd8A","./timer.js":"UKGC","./background_settings.js":"gLwk","./todolist.js":"BzzN","./bookmark.js":"vY5e","./quotes.js":"ItfU"}]},{},["H99C"], null)
-//# sourceMappingURL=/csb-4zkdbk/src.9a9942a5.js.map
+//# sourceMappingURL=/csb-4zkdbk/src.ae6ad51c.js.map
