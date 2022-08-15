@@ -87,6 +87,7 @@ function getGreetings() {
   return _greetings
 }
 
+//로그인된 상태를 의미합니다.
 function signInStatus() {
   const savedUser = localStorage.getItem(LOCAL_STORAGE_USER_KEY)
   const _greetings = getGreetings(); // 시간대별 인사문구를 구합니다.
@@ -97,11 +98,14 @@ function signInStatus() {
   greetings.innerText = `${savedUser}님, ${_greetings}` 
 }
 
+
+// 로그아웃된 상태를 의미합니다.
 function signOutStatus() {
   
   signOutBtn.classList.add("hidden"); //로그아웃버튼을 숨긴다.
   loginUserBtn.classList.remove("hidden"); //로그인버튼을 보여준다.
   greetings.classList.add("hidden"); // greetings를 숨깁니다.
+  loginUserBtn.innerText ="로그인"
 }
 
 
