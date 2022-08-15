@@ -14,52 +14,7 @@ function getNowDateTimeInfo() {
   const minute = Math.ceil(now.getMinutes()); // 분
   const second = Math.ceil(now.getSeconds());
 
-  // 시간 문구
-  let greetings = document.querySelector("#greetings");
-  switch (hour) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-      greetings.innerText = "다음날을 위해 충전을 해봐요~";
-      break;
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-    case 10:
-    case 11:
-      greetings.innerText = "좋은 아침입니다~ 오늘도 힘을 내봐요!";
-      break;
-    case 12:
-    case 13:
-    case 14:
-      greetings.innerText = "맛있는 점심시간 잘보내세요~";
-      break;
-    case 15:
-    case 16:
-      greetings.innerText = "커피한잔 마시면서 산책을 해보아요~";
-      break;
-    case 17:
-    case 18:
-    case 19:
-    case 20:
-      greetings.innerText = "나를 위한 시간을 가져볼까요~?";
-      break;
-    case 21:
-    case 22:
-    case 23:
-      greetings.innerText = "오늘 하루도 수고많으셨습니다~";
-
-      break;
-    default:
-      break;
-  }
-
-  // 로그인되어있는지 확인
-  openLoginUserInfoOrLoginFormWrapper();
+  
 
   // 오전/오후
   let AmPm = "AM";

@@ -13,7 +13,7 @@
     <div class="wrapper" id="time-cotainer">
       <!-- 로그인 성공시 -->
       <div class="inner-wrapper hidden middle-wrapper" id="login-user-info">
-        <h2 id="greetings">오늘하루도 수고했어요 ㅇㅇㅇ님!</h2>
+        <h2 class="hidden" id="greetings"></h2>
       </div>
 
       <div class="inner-wrapper quote-wrapper" id="quote-wrapper">
@@ -37,9 +37,9 @@
 
     <!-- 로그인 화면 -->
     <div class="wrapper hidden" id="user-info-container">
-      <div class="inner-wrapper" id="login-user-form-wrapper">
+      <div class="inner-wrapper " id="login-user-form-wrapper">
         <form action="" id="login-user-form">
-          <h2>이름을 입력해주세요</h2>
+          <h2>What is your name?</h2>
           <input
             type="text"
             placeholder="이름을 입력해주세요"
@@ -55,7 +55,7 @@
     <!-- 버튼패널 -->
     <div class="wrapper middle-wrapper">
       <!--(기본) 백그라운드 화면 세팅 -->
-      <button class="btn btn-default" id="login-user">로그인 하기</button>
+      <button class="btn btn-default" id="login-user">로그인</button>
       <button class="btn btn-default hidden" id="sign-out-btn">로그아웃</button>
       <!-- <button class="btn btn-default" id="setting-background">
         백그라운드 세팅
@@ -67,6 +67,7 @@
 
     <!-- 타이머 -->
     <div class="wrapper hidden" id="timer-container">
+      <h1>Timer</h1>
       <div class="inner-wrapper middle-wrapper">
         <!-- <button id="add-timer-form-btn">타이머 등록하기</button> -->
         <button class="btn" id="start-timer-btn">타이머 시작하기</button>
@@ -78,12 +79,8 @@
 
     <!-- 즐겨찾기 북마크리스트 -->
     <div class="wrapper hidden" id="bookmark-list-container">
-      <h1>[북마크 리스트]</h1>
-      <!-- 북마크 버튼 -->
-      <div class="inner-wrapper">
-        <button id="add-bookmark-btn">북마크 추가하기</button>
-      </div>
-
+      <h1>Bookmarks</h1>
+    
       <!-- 북마크 리스트 -->
       <div class="inner-wrapper">
         <ul id="bookmark-list"></ul>
@@ -96,13 +93,14 @@
             type="text"
             id="bookmark-name"
             placeholder="북마크 이름을 입력해주세요"
+            width="200px"
           />
           <input
             type="text"
             id="bookmark-link"
             placeholder="북마크할 URL 링크를 입력해주세요"
           />
-          <input id="add-bookmark" type="submit" value="북마크 등록" />
+          <input type="submit" value="북마크 등록" />
         </form>
       </div>
     </div>
@@ -122,7 +120,7 @@
 
     <!-- 배경화면 설정 -->
     <div class="wrapper hidden" id="setting-background-container">
-      <h1>[배경화면 설정]</h1>
+      <h1>Backgrounds</h1>
 
       <div class="inner-wrapper">
         <button>배경화면 등록하기</button>
