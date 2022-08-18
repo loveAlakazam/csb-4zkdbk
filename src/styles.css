@@ -11,6 +11,7 @@ font-family: sans-serif;
 .wrapper,
 .middle-wrapper {
   background-color: transparent;
+  position: center;
 }
 
 .hidden {
@@ -57,11 +58,23 @@ a.bookmark-alink {
   color: black;
 }
 
-a.bookmark-alink:visited,
-a.bookmark-alink:hover{
+a.bookmark-alink:visited{
   color: black;
 }
 
+a.bookmark-alink:hover,
 a.bookmark-alink:active {
   color: beige;
+}
+
+
+/* 북마크 */
+#bookmark-name {
+text-align: center;
+width: 200px;
+}
+
+#bookmark-link {
+text-align: center;
+width: 400px;
 }
